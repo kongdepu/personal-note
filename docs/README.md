@@ -2,7 +2,7 @@
 home: true
 heroImage: /img/hero.png
 heroText: 标题
-tagline: 副标题
+tagline: 副标题 个人笔记
 actionText: 开始 →
 actionLink: /guide/
 features:
