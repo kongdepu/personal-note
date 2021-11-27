@@ -12,38 +12,84 @@ module.exports = [
       }
     ]
   },
+  // 组件库 library
   {
-    "text": "plug",
+    "text": "组件库",
     "items": [
       {
-        "text": "Plug",
-        "link": "/plug/"
+        "text": "Element-UI",
+        "link": "/library/element"
       }
     ]
   },
+  // 插件 plug
   {
-    "text": "start",
-    "items": [
-      {
-        "text": "Start",
-        "link": "/start/"
-      }
-    ]
-  },
-  {
-    "text": "API",
+    "text": "插件",
     "items":[
       {
-        "text": "cli",
-        "items":[
-          { "text" : "cli1", "link": '/api/cli/cli1'}
-        ],
-        "link": "/api/cli/",
+        "text": "Docker",
+        "link": "/plug/docker",
       },
       {
-        "text": "node",
-        "link": "/api/node/",
+        "text": "Aplayer",
+        "link": "/plug/aplayer",
       }
     ]
-  }
+  },
+  // 开发工具 dev-tool
+  {
+    "text": "开发工具",
+    "items":
+    [
+      { 
+        "text": "Idea",
+        "link": "/dev-tool/idea",
+      },
+      {
+        "text": "VsCode",
+        "link": "/dev-tool/vs-code",
+      }
+    ]
+  },
+  // 前端 front
+  {
+    "text": "前端",
+    "items": 
+    [
+      {
+        "text": "Vue",
+        "link": "/front/vue"
+      },
+      {
+        "text": "React",
+        "link": "/front/react"
+      },
+      {
+        "text": "Angular",
+        "link": "/front/angular"
+      },
+    ]
+  },
+  // 后端 back
+  {
+    "text": "后端",
+    "items": 
+    [
+      {
+        "text": "Java",
+        "link": "/back/java"
+      },
+    ]
+  },
+  // 更多 more
+  {
+    "text": "更多",
+    "items": 
+    [
+      {
+        "text": "那些年我遇见的bug", 
+        "link": "/more/personal-bug"
+      },
+    ]
+  },
 ];

@@ -8,7 +8,7 @@
 </template>
 <script>
 export default {
-  name: "countUp",
+  name: "count-up",
   props:{
     startVal:{  
       type: Number,
