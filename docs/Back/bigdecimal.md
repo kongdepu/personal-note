@@ -2,11 +2,11 @@
 title: BigDecimal
 ---
 
-## 引言
+## 1.引言
 　　float和double类型的主要设计目标是为了科学计算和工程计算。他们执行二进制浮点运算，这是为了在广域数值范围上提供较为精确的快速近似计算而精心设计的。然而，它们没有提供完全精确的结果，所以不应该被用于要求精确结果的场合。但是，商业计算往往要求结果精确，这时候BigDecimal就派上大用场啦。
 
 
-## 构造方法
+## 2.构造方法
 1.public BigDecimal(double val)    将double表示形式转换为BigDecimal <font color=red>*不建议使用</font> 
 
 2.public BigDecimal(int val)　　将int表示形式转换成BigDecimal
@@ -46,7 +46,7 @@ public static void main(String[] args)
     
 }
 ```
-##  加减乘除运算
+##  3.加减乘除运算
 ``` java
 public BigDecimal add(BigDecimal value);                        //加法
 
@@ -61,9 +61,12 @@ BigDecimal除法可能出现不能整除的情况，比如 4.5/1.3，这时会�
 :::
 
 ``` java
+/**
+* @param divisor 除数
+* @param scale 小数点后保留位数
+* @param roundingMode 舍入模式，只有在作除法运算或四舍五入时才用到舍入模式，有下面这几种
+*/
 public BigDecimal divide(BigDecimal divisor, int scale, int roundingMode) 
-第一参数表示除数， 第二个参数表示小数点后保留位数，
-第三个参数表示舍入模式，只有在作除法运算或四舍五入时才用到舍入模式，有下面这几种
 
 ROUND_CEILING    //向正无穷方向舍入
 
@@ -75,9 +78,24 @@ ROUND_HALF_DOWN    //向（距离）最近的一边舍入，除非两边（的�
 
 ROUND_HALF_EVEN    //向（距离）最近的一边舍入，除非两边（的距离）是相等,如果是这样，如果保留位数是奇数，使用ROUND_HALF_UP，如果是偶数，使用ROUND_HALF_DOWN
 
-ROUND_HALF_UP    //向（距离）最近的一边舍入，除非两边（的距离）是相等,如果是这样，向上舍入, 1.55保留一位小数结果为1.6
+ROUND_HALF_UP    //（四舍五入）向（距离）最近的一边舍入，除非两边（的距离）是相等,如果是这样，向上舍入, 1.55保留一位小数结果为1.6
 
 ROUND_UNNECESSARY    //计算结果是精确的，不需要舍入模式
 
 ROUND_UP    //向远离0的方向舍入
 ```
+##  4.截取和四舍五入可用setScale方法
+``` java
+public static void main(String[] args)
+{
+    BigDecimal a = new BigDecimal("4.5635");
+
+    a = a.setScale(3, RoundingMode.HALF_UP);    //保留3位小数，且四舍五入
+    System.out.println(a);
+}
+```
+## 5.总结
+- 商业计算使用BigDecimal。
+- 尽量使用参数类型为String的构造函数。
+- BigDecimal都是不可变的（immutable）的，在进行每一步运算时，都会产生一个新的对象，所以在做加减乘除运算时千万要保存操作后的值。
+- 我们往往容易忽略JDK底层的一些实现细节，导致出现错误，需要多加注意。
