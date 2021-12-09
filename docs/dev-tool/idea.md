@@ -18,3 +18,7 @@ GitToolBox通过附加功能扩展Git集成状态显示、自动获取、内联�
 ### CodeGlance 
 IntelliJ IDEA 代码编辑区迷你缩放图插件
 [官网地址](https://plugins.jetbrains.com/plugin/7275-codeglance)
+### Rainbow Brackets
+彩虹颜色的括号，清除分清括号个数，防止括号错乱。
+### HighlightBracketPair
+括号开始结尾 高亮显示。一眼就能看到！  
