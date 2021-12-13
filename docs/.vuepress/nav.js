@@ -48,6 +48,10 @@ module.exports = [
       {
         "text": "VsCode",
         "link": "/dev-tool/vs-code",
+      },
+      {
+        "text": "Git",
+        "link": "/dev-tool/git",
       }
     ]
   },
