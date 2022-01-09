@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>BigDecimal | 我的个人网</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="icon" href="/img/hero.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/icons/icon-152x152.png">
+    <link rel="mask-icon" href="/icons/icon-152x152.png" color="#3eaf7c">
+    <meta name="description" content="我的个人网,第二次!">
+    <meta name="author" content="kongdepu">
+    <meta name="keywords" content="vuepress初识">
+    <meta name="theme-color" content="#3eaf7c">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="msapplication-TileImage" content="/icons/icons-144x144.png">
+    <meta name="msapplication-TileColor" content="#000000">
+    
+    <link rel="preload" href="/assets/css/0.styles.cdf0afbf.css" as="style"><link rel="preload" href="/assets/js/app.97e242fe.js" as="script"><link rel="preload" href="/assets/js/8.0655d318.js" as="script"><link rel="preload" href="/assets/js/2.24412eae.js" as="script"><link rel="preload" href="/assets/js/10.322d9212.js" as="script"><link rel="preload" href="/assets/js/3.8d0edb2a.js" as="script"><link rel="prefetch" href="/assets/js/11.bcf34719.js"><link rel="prefetch" href="/assets/js/12.6db417f1.js"><link rel="prefetch" href="/assets/js/13.f2c06f26.js"><link rel="prefetch" href="/assets/js/14.df5420b9.js"><link rel="prefetch" href="/assets/js/15.47e69eb4.js"><link rel="prefetch" href="/assets/js/16.17078596.js"><link rel="prefetch" href="/assets/js/17.a001a4f8.js"><link rel="prefetch" href="/assets/js/18.831d26a1.js"><link rel="prefetch" href="/assets/js/19.f2efc9e4.js"><link rel="prefetch" href="/assets/js/20.ef5189c0.js"><link rel="prefetch" href="/assets/js/21.b05d3d33.js"><link rel="prefetch" href="/assets/js/22.dfa067ef.js"><link rel="prefetch" href="/assets/js/23.b2c0dba7.js"><link rel="prefetch" href="/assets/js/24.02089499.js"><link rel="prefetch" href="/assets/js/25.f871f42e.js"><link rel="prefetch" href="/assets/js/26.63809e17.js"><link rel="prefetch" href="/assets/js/27.be6db5d8.js"><link rel="prefetch" href="/assets/js/28.66f46a16.js"><link rel="prefetch" href="/assets/js/29.71299080.js"><link rel="prefetch" href="/assets/js/30.f16b0538.js"><link rel="prefetch" href="/assets/js/31.24300a6b.js"><link rel="prefetch" href="/assets/js/4.e92c8338.js"><link rel="prefetch" href="/assets/js/5.230adf41.js"><link rel="prefetch" href="/assets/js/6.7dda8cf8.js"><link rel="prefetch" href="/assets/js/7.e3665751.js"><link rel="prefetch" href="/assets/js/9.15ce706e.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.cdf0afbf.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/img/hero.png" alt="我的个人网" class="logo"> <span class="site-name can-hide">我的个人网</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="起步" class="dropdown-title"><span class="title">起步</span> <span class="arrow down"></span></button> <button type="button" aria-label="起步" class="mobile-dropdown-title"><span class="title">起步</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/guide/java/" class="nav-link">
+  Java
+</a></li><li class="dropdown-item"><!----> <a href="/guide/" class="nav-link">
+  起步
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="组件库" class="dropdown-title"><span class="title">组件库</span> <span class="arrow down"></span></button> <button type="button" aria-label="组件库" class="mobile-dropdown-title"><span class="title">组件库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/library/element.html" class="nav-link">
+  Element-UI
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="插件" class="dropdown-title"><span class="title">插件</span> <span class="arrow down"></span></button> <button type="button" aria-label="插件" class="mobile-dropdown-title"><span class="title">插件</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/plug/docker.html" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/plug/aplayer.html" class="nav-link">
+  Aplayer
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="开发工具" class="dropdown-title"><span class="title">开发工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="开发工具" class="mobile-dropdown-title"><span class="title">开发工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/dev-tool/idea.html" class="nav-link">
+  Idea
+</a></li><li class="dropdown-item"><!----> <a href="/dev-tool/vs-code.html" class="nav-link">
+  VsCode
+</a></li><li class="dropdown-item"><!----> <a href="/dev-tool/git.html" class="nav-link">
+  Git
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/front/vue.html" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/front/react.html" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/front/angular.html" class="nav-link">
+  Angular
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><span class="title">后端</span> <span class="arrow down"></span></button> <button type="button" aria-label="后端" class="mobile-dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/back/java.html" class="nav-link">
+  Java
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="更多" class="dropdown-title"><span class="title">更多</span> <span class="arrow down"></span></button> <button type="button" aria-label="更多" class="mobile-dropdown-title"><span class="title">更多</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/more/personal-bug.html" class="nav-link">
+  那些年我遇见的bug
+</a></li></ul></div></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="起步" class="dropdown-title"><span class="title">起步</span> <span class="arrow down"></span></button> <button type="button" aria-label="起步" class="mobile-dropdown-title"><span class="title">起步</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/guide/java/" class="nav-link">
+  Java
+</a></li><li class="dropdown-item"><!----> <a href="/guide/" class="nav-link">
+  起步
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="组件库" class="dropdown-title"><span class="title">组件库</span> <span class="arrow down"></span></button> <button type="button" aria-label="组件库" class="mobile-dropdown-title"><span class="title">组件库</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/library/element.html" class="nav-link">
+  Element-UI
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="插件" class="dropdown-title"><span class="title">插件</span> <span class="arrow down"></span></button> <button type="button" aria-label="插件" class="mobile-dropdown-title"><span class="title">插件</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/plug/docker.html" class="nav-link">
+  Docker
+</a></li><li class="dropdown-item"><!----> <a href="/plug/aplayer.html" class="nav-link">
+  Aplayer
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="开发工具" class="dropdown-title"><span class="title">开发工具</span> <span class="arrow down"></span></button> <button type="button" aria-label="开发工具" class="mobile-dropdown-title"><span class="title">开发工具</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/dev-tool/idea.html" class="nav-link">
+  Idea
+</a></li><li class="dropdown-item"><!----> <a href="/dev-tool/vs-code.html" class="nav-link">
+  VsCode
+</a></li><li class="dropdown-item"><!----> <a href="/dev-tool/git.html" class="nav-link">
+  Git
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="前端" class="dropdown-title"><span class="title">前端</span> <span class="arrow down"></span></button> <button type="button" aria-label="前端" class="mobile-dropdown-title"><span class="title">前端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/front/vue.html" class="nav-link">
+  Vue
+</a></li><li class="dropdown-item"><!----> <a href="/front/react.html" class="nav-link">
+  React
+</a></li><li class="dropdown-item"><!----> <a href="/front/angular.html" class="nav-link">
+  Angular
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="后端" class="dropdown-title"><span class="title">后端</span> <span class="arrow down"></span></button> <button type="button" aria-label="后端" class="mobile-dropdown-title"><span class="title">后端</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/back/java.html" class="nav-link">
+  Java
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="更多" class="dropdown-title"><span class="title">更多</span> <span class="arrow down"></span></button> <button type="button" aria-label="更多" class="mobile-dropdown-title"><span class="title">更多</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/more/personal-bug.html" class="nav-link">
+  那些年我遇见的bug
+</a></li></ul></div></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Back</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/Back/bigdecimal.html" aria-current="page" class="active sidebar-link">BigDecimal</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/Back/bigdecimal.html#_1-引言" class="sidebar-link">1.引言</a></li><li class="sidebar-sub-header"><a href="/Back/bigdecimal.html#_2-构造方法" class="sidebar-link">2.构造方法</a></li><li class="sidebar-sub-header"><a href="/Back/bigdecimal.html#_3-加减乘除运算" class="sidebar-link">3.加减乘除运算</a></li><li class="sidebar-sub-header"><a href="/Back/bigdecimal.html#_4-截取和四舍五入可用setscale方法" class="sidebar-link">4.截取和四舍五入可用setScale方法</a></li><li class="sidebar-sub-header"><a href="/Back/bigdecimal.html#_5-总结" class="sidebar-link">5.总结</a></li></ul></li><li><a href="/Back/java.html" class="sidebar-link">Java</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="_1-引言"><a href="#_1-引言" class="header-anchor">#</a> 1.引言</h2> <p>float和double类型的主要设计目标是为了科学计算和工程计算。他们执行二进制浮点运算，这是为了在广域数值范围上提供较为精确的快速近似计算而精心设计的。然而，它们没有提供完全精确的结果，所以不应该被用于要求精确结果的场合。但是，商业计算往往要求结果精确，这时候BigDecimal就派上大用场啦。</p> <h2 id="_2-构造方法"><a href="#_2-构造方法" class="header-anchor">#</a> 2.构造方法</h2> <p>1.public BigDecimal(double val)    将double表示形式转换为BigDecimal <font color="red">*不建议使用</font></p> <p>2.public BigDecimal(int val)　　将int表示形式转换成BigDecimal</p> <p>3.public BigDecimal(String val)　　将String表示形式转换成BigDecimal</p> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token class-name">BigDecimal</span> bigDecimal <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">BigDecimal</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token class-name">BigDecimal</span> bDouble <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">BigDecimal</span><span class="token punctuation">(</span><span class="token number">2.3</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token class-name">BigDecimal</span> bString <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">BigDecimal</span><span class="token punctuation">(</span><span class="token string">&quot;2.3&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;bigDecimal=&quot;</span> <span class="token operator">+</span> bigDecimal<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;bDouble=&quot;</span> <span class="token operator">+</span> bDouble<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;bString=&quot;</span> <span class="token operator">+</span> bString<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p>输入</p> <div class="language-java line-numbers-mode"><pre class="language-java"><code>bigDecimal<span class="token operator">=</span><span class="token number">2</span>
+bDouble<span class="token operator">=</span><span class="token number">2.29999999999999982236431605997495353221893310546875</span>
+bString<span class="token operator">=</span><span class="token number">2.3</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><div class="custom-block tip"><p class="custom-block-title">提示</p> <p>当double必须用作BigDecimal的源时，请使用Double.toString(double)转成String，然后使用String构造方法，或使用BigDecimal的静态方法valueOf</p></div> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token class-name">BigDecimal</span> bDouble1 <span class="token operator">=</span> <span class="token class-name">BigDecimal</span><span class="token punctuation">.</span><span class="token function">valueOf</span><span class="token punctuation">(</span><span class="token number">2.3</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token class-name">BigDecimal</span> bDouble2 <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">BigDecimal</span><span class="token punctuation">(</span><span class="token class-name">Double</span><span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token number">2.3</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;bDouble1=&quot;</span> <span class="token operator">+</span> bDouble1<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span><span class="token string">&quot;bDouble2=&quot;</span> <span class="token operator">+</span> bDouble2<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h2 id="_3-加减乘除运算"><a href="#_3-加减乘除运算" class="header-anchor">#</a> 3.加减乘除运算</h2> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token keyword">public</span> <span class="token class-name">BigDecimal</span> <span class="token function">add</span><span class="token punctuation">(</span><span class="token class-name">BigDecimal</span> value<span class="token punctuation">)</span><span class="token punctuation">;</span>                        <span class="token comment">//加法</span>
+
+<span class="token keyword">public</span> <span class="token class-name">BigDecimal</span> <span class="token function">subtract</span><span class="token punctuation">(</span><span class="token class-name">BigDecimal</span> value<span class="token punctuation">)</span><span class="token punctuation">;</span>                   <span class="token comment">//减法 </span>
+
+<span class="token keyword">public</span> <span class="token class-name">BigDecimal</span> <span class="token function">multiply</span><span class="token punctuation">(</span><span class="token class-name">BigDecimal</span> value<span class="token punctuation">)</span><span class="token punctuation">;</span>                   <span class="token comment">//乘法</span>
+
+<span class="token keyword">public</span> <span class="token class-name">BigDecimal</span> <span class="token function">divide</span><span class="token punctuation">(</span><span class="token class-name">BigDecimal</span> value<span class="token punctuation">)</span><span class="token punctuation">;</span>                     <span class="token comment">//除法</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><div class="custom-block danger"><p class="custom-block-title">警告</p> <p>BigDecimal除法可能出现不能整除的情况，比如 4.5/1.3，这时会报错java.lang.ArithmeticException: Non-terminating decimal expansion; no exact representable decimal result.</p></div> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token comment">/**
+* @param divisor 除数
+* @param scale 小数点后保留位数
+* @param roundingMode 舍入模式，只有在作除法运算或四舍五入时才用到舍入模式，有下面这几种
+*/</span>
+<span class="token keyword">public</span> <span class="token class-name">BigDecimal</span> <span class="token function">divide</span><span class="token punctuation">(</span><span class="token class-name">BigDecimal</span> divisor<span class="token punctuation">,</span> <span class="token keyword">int</span> scale<span class="token punctuation">,</span> <span class="token keyword">int</span> roundingMode<span class="token punctuation">)</span> 
+
+ROUND_CEILING    <span class="token comment">//向正无穷方向舍入</span>
+
+ROUND_DOWN    <span class="token comment">//向零方向舍入</span>
+
+ROUND_FLOOR    <span class="token comment">//向负无穷方向舍入</span>
+
+ROUND_HALF_DOWN    <span class="token comment">//向（距离）最近的一边舍入，除非两边（的距离）是相等,如果是这样，向下舍入, 例如1.55 保留一位小数结果为1.5</span>
+
+ROUND_HALF_EVEN    <span class="token comment">//向（距离）最近的一边舍入，除非两边（的距离）是相等,如果是这样，如果保留位数是奇数，使用ROUND_HALF_UP，如果是偶数，使用ROUND_HALF_DOWN</span>
+
+ROUND_HALF_UP    <span class="token comment">//（四舍五入）向（距离）最近的一边舍入，除非两边（的距离）是相等,如果是这样，向上舍入, 1.55保留一位小数结果为1.6</span>
+
+ROUND_UNNECESSARY    <span class="token comment">//计算结果是精确的，不需要舍入模式</span>
+
+ROUND_UP    <span class="token comment">//向远离0的方向舍入</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br></div></div><h2 id="_4-截取和四舍五入可用setscale方法"><a href="#_4-截取和四舍五入可用setscale方法" class="header-anchor">#</a> 4.截取和四舍五入可用setScale方法</h2> <div class="language-java line-numbers-mode"><pre class="language-java"><code><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span>
+<span class="token punctuation">{</span>
+    <span class="token class-name">BigDecimal</span> a <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">BigDecimal</span><span class="token punctuation">(</span><span class="token string">&quot;4.5635&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    a <span class="token operator">=</span> a<span class="token punctuation">.</span><span class="token function">setScale</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token class-name">RoundingMode</span><span class="token punctuation">.</span>HALF_UP<span class="token punctuation">)</span><span class="token punctuation">;</span>    <span class="token comment">//保留3位小数，且四舍五入</span>
+    <span class="token class-name">System</span><span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>a<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h2 id="_5-总结"><a href="#_5-总结" class="header-anchor">#</a> 5.总结</h2> <ul><li>商业计算使用BigDecimal。</li> <li>尽量使用参数类型为String的构造函数。</li> <li>BigDecimal都是不可变的（immutable）的，在进行每一步运算时，都会产生一个新的对象，所以在做加减乘除运算时千万要保存操作后的值。</li> <li>我们往往容易忽略JDK底层的一些实现细节，导致出现错误，需要多加注意。</li></ul></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">更新时间:</span> <span class="time">2021年12月9日星期四下午3点25分</span></div></footer> <div class="page-nav"><p class="inner"><!----> <span class="next"><a href="/Back/java.html">
+        Java
+      </a>
+      →
+    </span></p></div>  <Vssue options="[object Object]"></Vssue></main></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/assets/js/app.97e242fe.js" defer></script><script src="/assets/js/8.0655d318.js" defer></script><script src="/assets/js/2.24412eae.js" defer></script><script src="/assets/js/10.322d9212.js" defer></script><script src="/assets/js/3.8d0edb2a.js" defer></script>
+  </body>
+</html>
